@@ -1,0 +1,42 @@
+.root {
+  display: grid;
+}
+
+.base {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding: 1rem 1.75rem;
+  gap: 0.25rem;
+}
+
+.row {
+  display: grid;
+  place-items: center center;
+  margin: auto;
+  gap: 0.25rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.cell {
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 600;
+  display: grid;
+  place-items: center center;
+  height: 4rem;
+  width: 4rem;
+  border: 2px solid #424549;
+  color: #ffffff;
+  &__absent {
+    @extend .cell;
+    background-color: #1e2124;
+  }
+  &__correct {
+    @extend .cell;
+    background-color: #538d4e;
+  }
+  &__present {
+    @extend .cell;
+    background-color: #b59f3b;
+  }
+}
