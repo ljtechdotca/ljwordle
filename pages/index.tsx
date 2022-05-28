@@ -22,7 +22,7 @@ const Home: NextPage<HomeProps> = ({ word, words }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main className={styles.base}>
+      <main>
         <Container>
           <GameGrid word={word} words={words} />
         </Container>
