@@ -6,12 +6,7 @@ interface ContainerProps {
 }
 
 const Container: FC<ContainerProps> = ({ children }) => {
-  return (
-    <div className={styles.root}>
-      <header className={styles.base}>https://ljwordle.vercel.app</header>
-      {children}
-    </div>
-  );
+  return <div className={styles.root}>{children}</div>;
 };
 
 export default Container;

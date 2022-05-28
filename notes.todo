@@ -1,0 +1,13 @@
+✔ validate word when entering @done(22-05-26 20:39)
+    do not let bad words pass
+        for example "LLLLL" is not a valid word because it is not on the words list.
+
+    read from the words.txt file and search for the word
+
+✔ messages @done(22-05-26 20:40)
+
+✔ animations @done(22-05-26 20:40)
+
+✔ color keyboard for keys in use @done(22-05-26 21:13)
+
+☐ fix the absentFilter, correctFilter, and the presentFilter

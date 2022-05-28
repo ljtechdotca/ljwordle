@@ -1,4 +1,4 @@
-import { FC, useState } from "react";
+import { FC } from "react";
 import styles from "./Keyboard.module.scss";
 
 const keyboard = [
@@ -28,11 +28,11 @@ interface KeyboardProps {
   onKeyClick: (key: string) => any;
 }
 
-const Keyboard: FC<KeyboardProps> = ({ active, input, onKeyClick }) => {
-  const [absent, setAbsent] = useState("");
-  const [correct, setCorrect] = useState("");
-  const [present, setPresent] = useState("");
-
+const Keyboard: FC<KeyboardProps> = ({
+  active: [absent, correct, present],
+  input,
+  onKeyClick,
+}) => {
   return (
     <div className={styles.root}>
       {keyboard.map((row) => {
